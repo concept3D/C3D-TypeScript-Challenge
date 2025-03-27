@@ -101,6 +101,6 @@ Notes:
 
 ### Final notes:
 
-Take as long as you need to feel to do your best work. However, this challenge should realistically take no longer than approximately 3-4 hours.
+Take as long as you need to do your best work. However, this challenge should realistically take no longer than approximately 3-4 hours.
 
 Have fun!
