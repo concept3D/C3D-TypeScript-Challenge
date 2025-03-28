@@ -11,11 +11,8 @@ RUN npm run build
 
 
 FROM base AS development
-COPY package*.json ./
-RUN npm install
-COPY . .
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+ENTRYPOINT ["/var/c3d/backend/container/entrypoint.sh"]
 
 
 FROM base AS final
