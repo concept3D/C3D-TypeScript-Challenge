@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// Configure axios base URL
 axios.defaults.baseURL = 'http://localhost:3000';
 
 interface Student {
