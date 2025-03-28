@@ -1,41 +1,26 @@
-FROM node:18-alpine AS builder
-
+FROM node:18-alpine AS base
+RUN mkdir -p /var/c3d/backend
 WORKDIR /var/c3d/backend
 
-# Install dependencies and build
+
+FROM base AS builder
 COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 
-# Development stage
-FROM node:18-alpine AS development
 
-WORKDIR /var/c3d/backend
-
-# Install dependencies
+FROM base AS development
 COPY package*.json ./
 RUN npm install
-
-# Copy source code
 COPY . .
-
 EXPOSE 3000
-
 CMD ["npm", "run", "dev"]
 
-# Production stage
-FROM node:18-alpine AS final
 
-WORKDIR /var/c3d/backend
-
-# Copy package files and install production dependencies
+FROM base AS final
 COPY package*.json ./
 RUN npm install --omit=dev
-
-# Copy built files from builder
 COPY --from=builder /var/c3d/backend/dist ./dist
-
 EXPOSE 3000
-
 CMD ["npm", "start"] 
