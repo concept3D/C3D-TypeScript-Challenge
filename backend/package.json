@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
+    "test": "jest",
     "migrate:create": "knex migrate:make",
     "migrate:latest": "knex migrate:latest",
     "migrate:up": "knex migrate:up",
@@ -22,9 +23,12 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20.10.5",
-    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
     "typescript": "^5.3.3"
   }
-} 
+}

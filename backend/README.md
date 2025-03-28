@@ -2,7 +2,8 @@
 
 ## Database Migrations
 
-This project uses Knex.js for database migrations. The following commands are available for managing database migrations:
+This project uses [Knex.js](https://knexjs.org/guide/) for database migrations. 
+The following commands are available for managing database migrations:
 
 ### Creating a New Migration
 To create a new migration file:
@@ -36,4 +37,5 @@ docker-compose exec api npm run migrate:rollback
 ```
 
 ## Development
-The backend server runs in development mode with hot-reloading enabled. Any changes to the source code will automatically restart the server.
+The backend server runs in development mode with hot-reloading enabled.
+Any changes to the source code will automatically restart the server.

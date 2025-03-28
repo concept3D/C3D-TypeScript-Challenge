@@ -6,14 +6,11 @@ import knexConfig from './db/knexfile';
 const app = express();
 const port = 3000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Database connection
 const db = knex(knexConfig.development);
 
-// Routes
 app.get('/api/students', async (req: Request, res: Response) => {
   try {
     const students = await db('students').select('*');
