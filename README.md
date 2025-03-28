@@ -19,18 +19,21 @@ Requirements: Docker and Docker Compose
 3. Initialize git. Host this project as a new repo on your own Github profile
 4. Run `docker-compose up -d` to start all services
 5. Run Migration Script
-6. Visit http://localhost:5173
+6. Visit [http://localhost:5173](http://localhost:5173)
 7. Good luck!
 
 > We rely heavily upon Git. Be sure to create new branches for new features, as if you're creating a pull request. Commit early and commit often.
 
 ### Overview
 
-This repository is a simple student information management system built with React, TypeScript, and Node.js. The application currently has a basic form with a single input field for student names. Your task is to enhance this system with additional functionality and fields.
+This repository is a simple student information management system built with React, TypeScript, and Node.js. 
+The application currently has a basic form with a single input field for student names. 
+Your task is to enhance this system with additional functionality and fields.
 
 ### Requirements
 
-The app currently has a form with one input field for student names. We want to expand this to include more student information and improve the overall functionality.
+The app currently has a form with one input field for student names. 
+We want to expand this to include more student information and improve the overall functionality.
 
 Required Fields to Add:
 * Email address
@@ -60,7 +63,7 @@ Notes:
 - Frontend: React + TypeScript (Vite)
 - Backend: Node.js + Express + TypeScript
 - Database: MySQL
-- ORM: Knex.js
+- Migrations/Queries: Knex.js
 - Containerization: Docker & Docker Compose
 
 ### What We'll Look For During Review
@@ -101,6 +104,7 @@ Notes:
 
 ### Final notes:
 
-Take as long as you need to do your best work. However, this challenge should realistically take no longer than approximately 3-4 hours.
+Take as long as you need to do your best work. 
+However, this challenge should realistically take no longer than approximately 3-4 hours.
 
 Have fun!
