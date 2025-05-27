@@ -20,7 +20,8 @@ Requirements: Docker and Docker Compose
 4. Run `docker-compose up -d` to start all services
 5. Run Migration Script
 6. Visit [http://localhost:5173](http://localhost:5173)
-7. Good luck!
+
+Take as long as you need to do your best work. The basic challenge was designed to take roughly ~4 hours. 
 
 > We rely heavily upon Git. Be sure to create new branches for new features, as if you're creating a pull request. Commit early and commit often.
 
@@ -102,9 +103,9 @@ Notes:
 - [Knex.js Documentation](https://knexjs.org/)
 - [Express Documentation](https://expressjs.com/)
 
-### Final notes:
-
-Take as long as you need to do your best work. 
-However, this challenge should realistically take no longer than approximately 3-4 hours.
+Hints:
+- If there is an area you did not get to complete fully please be prepared to discuss
+- Proper TypeScript usage is important
+- Quality over quantity, show us your best code
 
 Have fun!
